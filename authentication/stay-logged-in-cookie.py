@@ -4,7 +4,6 @@ import base64
 import sys
 
 url = "https://ac6f1f1b1e9441acc0538e1e004700b3.web-security-academy.net"
-#s = requests.Session
 proxy = {'https':'http:127.0.0.1:8080', 'http':'http:127.0.0.1'}
 
 def genrate_md5_digest(password):
@@ -17,7 +16,6 @@ def write_to_file(cookie):
 
 
 def brute_force_cookies(url):
-
 	with open('cookies.txt') as f:
 		for cookies in f:
 			cookie = cookies.strip()
